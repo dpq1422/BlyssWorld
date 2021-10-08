@@ -1,0 +1,8 @@
+[19-Oct-2018 13:44:10 Etc/GMT] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/bankatyf/public_html/_blysspay.com/retailer/WalletSendRequestServlet.php:84) in /home/bankatyf/public_html/_blysspay.com/zc-common-admin.php on line 5
+[19-Oct-2018 19:14:10 Asia/Kolkata] PHP Notice:  Undefined index: channel1 in /home/bankatyf/public_html/_blysspay.com/retailer/ServiceDmtServlet.php on line 1735
+[19-Oct-2018 19:14:21 Asia/Kolkata] PHP Notice:  Undefined variable: result_beneficiary in /home/bankatyf/public_html/_blysspay.com/retailer/ServiceDmtServlet.php on line 1360
+[19-Oct-2018 19:14:21 Asia/Kolkata] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, null given in /home/bankatyf/public_html/_blysspay.com/retailer/ServiceDmtServlet.php on line 1360
+[19-Oct-2018 19:14:21 Asia/Kolkata] PHP Notice:  Undefined variable: result_transactions in /home/bankatyf/public_html/_blysspay.com/retailer/ServiceDmtServlet.php on line 1460
+[19-Oct-2018 19:14:21 Asia/Kolkata] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home/bankatyf/public_html/_blysspay.com/retailer/ServiceDmtServlet.php on line 1460
+[19-Oct-2018 19:14:21 Asia/Kolkata] PHP Notice:  Undefined index: channel1 in /home/bankatyf/public_html/_blysspay.com/retailer/ServiceDmtServlet.php on line 1735
+[19-Oct-2018 19:14:21 Asia/Kolkata] PHP Notice:  Undefined index: channel2 in /home/bankatyf/public_html/_blysspay.com/retailer/ServiceDmtServlet.php on line 1744

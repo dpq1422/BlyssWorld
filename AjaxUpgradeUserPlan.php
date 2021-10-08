@@ -1,0 +1,34 @@
+<?php
+include('zc-session-admin.php');
+$userid="";
+$curp="";
+$newp="";
+$rs="";
+$msg="";
+if(isset($_POST['userid']))
+{
+	$userid=$_POST['userid'];
+}
+if(isset($_POST['curp']))
+{
+	$curp=$_POST['curp'];
+}
+if(isset($_POST['newp']))
+{
+	$newp=$_POST['newp'];
+}
+if(isset($_POST['rs']))
+{
+	$rs=$_POST['rs'];
+}
+if(isset($_POST['msg']))
+{
+	$msg=$_POST['msg'];
+}
+if($userid!="" && $curp!="" && $newp!="" && $rs!="" && $msg!="")
+{
+	include_once('zf-Plan.php');
+	upgrade_user_plan($userid,$curp,$newp,$rs,$msg);
+}
+echo json_encode("");
+?>
