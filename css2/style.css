@@ -1,0 +1,158 @@
+@charset "utf-8";
+/* CSS Document */
+html, body{ height:100%; font-family: 'Roboto', sans-serif;}
+*{ padding:0px; margin:0px;}
+ul,li{ list-style:none;}
+a{ text-decoration:none; }
+.display-none{display:none;}
+/*my css*/
+.my-center{ max-width:1200px; margin:0 auto;}
+.wh{ width:100%;}
+p{ font-size:15px; font-family: 'Roboto', sans-serif;}
+h1, h2, h3, h4, h5, h6{font-family: 'Montserrat', sans-serif;}
+#map_canvas {  height: 100%!important;  width: 100%!important;  margin: 0px!important;  padding: 0px!important; }
+/*my css*/
+
+/*header css start*/
+.logo a{ display:block; z-index:9; position:relative;}
+.logo2{ display:none;}
+.logo2 a{ display:block; z-index:9; position:relative;}
+.header{ position:absolute; top:0px; width:100%; padding:10px 0; z-index:9;}
+.web-menu{ margin-top:12px;}
+.menu-top ul{ float:right;}
+.menu-top ul li{ float:left; margin:0 0 0 25px;}
+.menu-top ul li a{ display:block; font-size:14px; color:#e1e1e1; font-weight:600; font-family: 'Montserrat', sans-serif;}
+.menu-main ul{ float:right;}
+.menu-main ul li{ float:left; padding:10px 0 10px 25px;}
+.menu-main ul li a{ display:block; font-size:16px; font-weight:600; font-family: 'Montserrat', sans-serif;}
+
+.trans-bg{background:rgba(0,0,0,0.8); width:100%; height:100%; top:0px; left:0px; position:fixed; z-index:1; display:none;}
+.tab-bg{ width:600px; float:right; top:100px; right:0px; padding:3px; position:absolute; z-index:2; display:none;}
+.current{ display:block;}
+.tab-linkes li{ margin-bottom:5px; width:100%; float:left;}
+.tab-linkes li a{ display:block; transition:all ease 0.5s;}
+.tab-linkes li a i{ color:#aaa; float:left; margin:5px 10px 0 0;}
+.tab-linkes li:hover a{ padding:0 0 0 5px;}
+
+.responsive-bg{ position:fixed; width:100%; background:#fff; height:100%; top:0px; left:0px; display:none;}
+.menu-icon{ float:right; font-size:25px; width:40px; height:40px; border-radius:50px; text-align:center; z-index:9; position:relative; cursor:pointer; 
+margin:20px 0 0 0; display:none;}
+.responsive-menu { width:100%; float:left; margin-top:100px; overflow-y:auto; height:100%; padding-bottom:100px;}
+.responsive-menu li{ width:100%; float:left; position:relative;}
+.responsive-menu li a{ display:block; padding:16px; font-size:18px;}
+.arrow{ background:url(../img2/arrow-close.png) no-repeat top 18px right 10px; background-size:20px;}
+.arrow-open{ background:url(../img2/arrow-open.png) no-repeat top 18px right 10px; background-size:20px;}
+/*.responsive-menu li ul{ display:none;}
+.responsive-menu li:hover > ul{ display:block;}*/
+/*header css end*/
+
+/*banner css start*/
+.banner-main{ height:100%;}
+.banner-main img{ width:100%; height:100%; object-fit:cover;}
+.banner-txt{ position:absolute; width:50%; top:230px; left:10%; color:#fff;}
+.banner-txt h1{ font-size:50px; font-weight:bold; line-height:60px;}
+.banner-arrow i{ font-size:60px;}
+/*banner css end*/
+
+/*features css start*/
+.features{ background:url(../img2/globle-img.png) no-repeat center center #111;}
+.heading h2{ margin:0 0 -10px 0 !important; font-weight:500;color:#3f51b5!important;}
+.heading h6{ font-size:15px;}
+.heading span{ width:30px; height:4px; display:inline-block; background:#ee8d2e;}
+.features-part span{ width:140px; background:#111; height:140px; border:2px solid #757575; border-radius:100px; display:inline-block; transition:all ease 0.9s;}
+.features-part span i{ font-size:40px; margin-top:46px; color:#ee8d2e; transition:all ease 0.9s;}
+.features-part:hover span{ border:2px solid #ee8d2e;}
+.features-part:hover span i{ transform:rotate(360deg); color:#fff;}
+.features-part h5{font-family: 'Roboto', sans-serif;}
+/*features css end*/
+
+/*pro&ser css start*/
+.products-txt h4{ color:#3f51b5; font-weight:600;}
+.products-txt p{ line-height:30px; color:#3a3a3a; font-size:16px;}
+/*pro&ser css end*/
+
+/*figures css start*/
+.figures-part span{ width:170px; height:170px; border:2px solid #ee8d2e; border-radius:100px; display:inline-block; transition:all ease 0.5s;}
+.figures-part span label{ width:100%; margin-top:36px; float:left; font-family: 'Montserrat', sans-serif; font-size:32px; font-weight:300;}
+.figures-part span i{ font-size:40px; color:#ee8d2e; transition:all ease 0.5s;}
+.figures-part:hover span{ border:2px solid #3f51b5;}
+.figures-part:hover span i{ color:#3f51b5;}
+.figures-part h5{font-family: 'Roboto', sans-serif;}
+/*figures css end*/
+
+/*news&date css start*/
+.news-data p{ margin:20px 0; color:#3a3a3a;}
+/*news&date css end*/
+
+/*tesimonial css start*/
+.testimo{ background:url(../img2/testi-bg.jpg) no-repeat center center #4859b8; background-size:cover;}
+/*tesimonial css end*/
+
+/*contact css start*/
+.contact{ background:url(../img2/contact-bg.jpg) no-repeat center center; background-size:cover; background-attachment:fixed;}
+.contact-data input[type="text"], .contact-data textarea{ background:none; color:#fff;}
+/*contact css end*/
+
+/*Footer css start*/
+.footer{ background:#222; color:#808080;}
+.footer-menu li{ width:100%; float:left; margin-bottom:6px;}
+.footer-menu li a{ display:block; font-size:14px; transition:all ease 0.5s;}
+.footer-menu li a i{ font-size:10px; float:left; margin:7px 7px 0 0;}
+.footer-menu li:hover a{ color:#fff; padding:0 0 0 5px;}
+.social li{ display:inline-block; margin-left:10px;}
+.social li a{ display:block; transition:all ease 0.5s;}
+.social li a i{ display:block; font-size:20px;}
+.social li:hover a{ color:#fff;}
+/*Footer css end*/
+
+/*top-sms css start*/
+.top-sms{background:rgba(0,0,0,0.8); padding:10px 0; position:fixed; bottom:0px; left:0px; z-index:9;}
+.top-sms span{ margin-top:8px;}
+/*top-sms css end*/
+
+/*back to top css start*/
+#back-to-top {position:fixed; bottom:10px; right:10px; z-index:8; width:40px; height:40px; text-align:center; line-height:38px; cursor:pointer; background:#3f51b5;
+border-radius:50px; color:#fff; transition:opacity 0.2s ease-out; opacity:0;}
+#back-to-top.show {opacity:1;}
+/*back to top css end*/
+
+/*inner-pages css start*/
+.inner-top-bg{ position:relative;}
+.money-trans-bg{ background:url(../img2/money-trans.jpg) no-repeat top center; height:400px; background-size:cover;}
+.nepal-bg{ background:url(../img2/nepal.jpg) no-repeat top center; height:400px; background-size:cover;}
+.mpos-bg{ background:url(../img2/mpos.jpg) no-repeat top center; height:400px; background-size:cover;}
+.aadhaar-bg{ background:url(../img2/aadhaar.jpg) no-repeat top center; height:400px; background-size:cover;}
+.prepaid-bg{ background:url(../img2/prepaid-card.jpg) no-repeat top center; height:400px; background-size:cover;}
+.ecommarce-bg{ background:url(../img2/ecommarce.jpg) no-repeat top center; height:400px; background-size:cover;}
+.mobile-rec-bg{ background:url(../img2/mobile.jpg) no-repeat top center; height:400px; background-size:cover;}
+.dth-rec-bg{ background:url(../img2/dth.jpg) no-repeat top center; height:400px; background-size:cover;}
+.electri-bill-bg{ background:url(../img2/electri-bill.jpg) no-repeat top center; height:400px; background-size:cover;}
+.air-ticket-bg{ background:url(../img2/air-ticket.jpg) no-repeat top center; height:400px; background-size:cover;}
+.bus-bg{ background:url(../img2/bus.jpg) no-repeat top center; height:400px; background-size:cover;}
+.railway-bg{ background:url(../img2/railway.jpg) no-repeat top center; height:400px; background-size:cover;}
+.refer-bg{ background:url(../img2/refer.jpg) no-repeat top center; height:400px; background-size:cover;}
+.inner-top-text{ position:absolute; bottom:40px;}
+.inner-top-text h1 {font-size:50px; font-weight:bold; line-height:60px;}
+.nepal-txt h4{ color:#3f51b5; font-weight:600;}
+.nepal-txt p{ line-height:28px; font-size:16px; margin-bottom:10px;}
+/*inner-pages css end*/
+
+
+@media only screen and (max-width:1200px){
+}
+@media only screen and (max-width:992px){
+	.logo{ display:none;}
+	.logo2{ display:block;}
+	.header{ position:fixed;}
+	.web-menu, .tab-bg{ display:none !important;}
+	.menu-icon{ display:block;}
+	.banner-txt{ top:90px; width:100%; left:0px; padding:0 20px;}
+	.banner-txt h1, .inner-top-text h1{ font-size:25px; line-height:30px;}
+	.banner-txt h3, .inner-top-text h3{ font-size:18px;}
+	.banner-arrow{ display:none;}
+	.top-sms{ display:none;}
+}
+@media only screen and (max-width:600px){	
+	.banner-txt{ top:130px;}
+	.social, .copyright{ text-align:center !important;}
+}
