@@ -1,0 +1,25 @@
+<?php
+	include_once('zc-common-admin.php');
+	if(!isset($_SESSION))
+	{
+		session_start();
+	}	
+	if(!isset($_SESSION['logged_user_id']))
+	{
+		$logged_user_id="";
+		$logged_user_type="";
+		$logged_user_typename="";
+		$logged_user_name="";
+		$logged_log_id="";
+		header('location: index.php');
+	}
+	else
+	{
+		include_once('zf-ShowUserTypeName.php');
+		$logged_user_id=$_SESSION['logged_user_id'];
+		$logged_user_type=$_SESSION['logged_user_type'];
+		$logged_user_name=$_SESSION['logged_user_name'];
+		$logged_log_id=$_SESSION['logged_log_id'];
+		$logged_user_typename=show_user_type_name($logged_user_type);
+	}
+?>

@@ -1,0 +1,29 @@
+<?php
+include('zc-session-admin.php');
+$m_id="";
+$result="";
+$txnst="";
+if(isset($_POST['order']))
+{
+	$m_id=$_POST['order'];
+}
+if(isset($_POST['txnst']))
+{
+	$txnst=$_POST['txnst'];
+}
+if($m_id!="" && $txnst!="" && $m_id>58292)
+{
+	$txn_status=$txnst;
+	include('zf-TxnExists.php');
+	$arr1=show_mt_order_details($m_id);
+	$doctype="1";
+	$docid="BFUPM3499H";
+	$areapincode="302021";
+	$geo="28.4547147,77.0737037,818";
+	include_once('zf-TxnSource1DmtApi.php');
+	$arr2=fund_transfer($arr1[0],$arr1[1],$arr1[2],$arr1[3],$arr1[4],$doctype,$docid,$areapincode,$geo);
+	$response=$arr2[0];
+	update_txn_status($arr1[0],$response);
+}
+echo json_encode($m_id);
+?>
