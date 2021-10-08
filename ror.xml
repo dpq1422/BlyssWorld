@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<channel>
+  <title>ROR Sitemap for https://blysspay.in/</title>
+  <link>https://blysspay.in/</link>
+
+<item>
+     <link>https://blysspay.in/LoginServlet</link>
+     <title>Login :: BlyssPay.in</title>
+     <description>Login :: BlyssPay.in</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://blysspay.in/ForgotPasswordServlet</link>
+     <title>Forgot Password :: BlyssPay.in</title>
+     <description>Forgot Password :: BlyssPay.in</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+</channel>
+</rss>
+  

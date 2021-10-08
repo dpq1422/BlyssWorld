@@ -1,0 +1,2 @@
+https://blysspay.in/LoginServlet
+https://blysspay.in/ForgotPasswordServlet

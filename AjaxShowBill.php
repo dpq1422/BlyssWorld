@@ -1,0 +1,50 @@
+<?php
+include('zc-session-admin.php');
+$result="";
+$userid="";
+$mobile="";
+$operator_code="";
+$op1="";
+$op2="";
+$op3="";
+$op4="";
+$op5="";
+if(isset($_SESSION['logged_user_id']))
+{
+	$userid=$_SESSION['logged_user_id'];
+}
+if(isset($_POST['mobile']))
+{
+	$mobile=$_POST['mobile'];
+}
+if(isset($_POST['operator_code']))
+{
+	$operator_code=$_POST['operator_code'];
+}
+if(isset($_POST['op1']))
+{
+	$op1=$_POST['op1'];
+}
+if(isset($_POST['op2']))
+{
+	$op2=$_POST['op2'];
+}
+if(isset($_POST['op3']))
+{
+	$op3=$_POST['op3'];
+}
+if(isset($_POST['op4']))
+{
+	$op4=$_POST['op4'];
+}
+if(isset($_POST['op5']))
+{
+	$op5=$_POST['op5'];//Z74ZS553773F//Z21UF470775K//Z74GT740981K//z21uf370874
+}
+if($userid!="" && $mobile!="" && $operator_code!="")
+{
+	include_once('zf-WalletTxnElec.php');
+	$result=txn_recharge_with_op1to5_fetch_bill($userid, $mobile, $operator_code, $op1, $op2, $op3, $op4, $op5);
+}
+echo json_encode("$result");
+?>
